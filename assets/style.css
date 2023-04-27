@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 189, 241);
+    text-shadow: 1px 1px 2px grey;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    box-shadow: inset;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: rgb(117, 117, 117);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(175, 84, 137, 0),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    color: rgb(134, 17, 129);
+    background-color: rgb(253, 227, 242);
+    margin-left: 20px;
+    font-size: 300%;
+    align-items: center;
+    padding: 0px 150px 0px 20px ;
+    border-radius: 10px;
+    
+}
+
+ul {
+    display: flex; 
+    justify-content:space-between;  
+    min-width: 250px;
+    list-style: none;
+    font-size: 120%;
+}
+
+nav ul a {
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul a:hover {
+    color:rgb(252, 164, 215);
+}
+
+.subheadings {
+    color: rgb(148, 3, 148);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 750px;
+    margin-left: 130px;
+    margin-top: 50px;
+}
+
+.about {
+    text-shadow: 1px 1px 2px grey;
+    width: 100px;
+}
+
+.work {
+    text-shadow: 1px 1px 2px grey;
+    width: 100px;
+}
+
+.contact {
+    text-shadow: 1px 1px 2px grey;
+    margin-left: -30px;
+    width: 100px;
+    
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(175, 84, 137, 0),
+    1em 1em 2em rgba(0, 0, 0, 0.3);
+    margin: -790px 250px 0px 250px;
+    height: 1500px;
+    display: flex;
+    border-radius: 50px;   
+}
+
+p {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+article {
+    position: absolute;
+    justify-content: left; 
+    gap: 25px;
+    padding-top: 15%;
+}
