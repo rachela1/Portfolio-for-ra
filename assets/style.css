@@ -83,6 +83,9 @@ p {
 
 .contact-info {
     display:inline-block;
+    position: relative;
+    flex-direction: column;
+
 }
 
 .about {
@@ -108,12 +111,12 @@ p {
     margin-top: -1400px;
     margin-left: 300px;
     border-color: pink;
+    filter:blur(2px)
     
 }
 
 .work-other {
     position: relative;
-    
     display: inline-block;
     flex-direction:column;
     gap:1px;
@@ -121,14 +124,17 @@ p {
     border-color: pink;
     padding:10px;
     margin-left: 285px;
+    filter:blur(2px)
     
 }
 
 .work-other:hover{
-    filter:blur(2px);
+    filter:blur(0px);
 }
+
 .work-featured:hover {
-    filter:blur(2px);
+    filter:blur(0px);
+
 }
 .caption {
     position: absolute;
