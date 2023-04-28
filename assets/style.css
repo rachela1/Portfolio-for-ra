@@ -66,27 +66,24 @@ nav ul a:hover {
     color: rgb(252, 164, 215);
 }
 
-.container {
+#container {
+    position: relative;
+    display: flex;
     background-color: rgb(255, 255, 255);
     box-shadow: inset 0 -4em 4em rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(175, 84, 137, 0),
-    1em 1em 2em rgba(0, 0, 0, 0.3);
+        1em 1em 2em rgba(0, 0, 0, 0.3);
     margin: 20px 250px 250px 250px;
-    height: 1500px;
-    display: flex;
+    height: 1600px;
     border-radius: 50px;
 }
 
 p {
-    margin-top: 20px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 50px;
     margin-left: 20px;
 }
 
-.contact-info {
-    display:inline-block;
-    position: relative;
-    flex-direction: column;
-
-}
 
 .about {
     position: absolute;
@@ -104,38 +101,44 @@ p {
     padding-left: 60px;
 }
 
-.work-featured {
-    display:flex;
+article {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: -1400px;
-    margin-left: 300px;
-    border-color: pink;
-    filter:blur(2px)
-    
+    margin-top: 250px;
+    margin-left: 50px;
+
 }
 
-.work-other {
-    position: relative;
-    display: inline-block;
-    flex-direction:column;
-    margin-left: 295px;
+.fluid-img {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    border-color: pink;
-    filter:blur(2px)
-}
-
-.work-other:hover{
-    filter:blur(0px);
-}
-
-.work-featured:hover {
-    filter:blur(0px);
+    filter: blur(2px);
+    padding: 1px;
 
 }
+
+.fluid-img:hover {
+    filter: blur(0px);
+}
+
+.work-items-featured {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    filter: blur(2px);
+}
+
+.work-items-featured:hover {
+    filter: blur(0px);
+
+}
+
 .caption {
-   display: block;
-    color: palevioletred; 
+    color: palevioletred;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -146,8 +149,9 @@ p {
     padding-left: 40px;
 }
 
-@media screen and (min-width: 480px) {
-    #leftsidebar {width: 200px; float: left;}
-    #main {margin-left: 216px;}
-  }
-
+.contact-info {
+    color: rgb(221, 142, 191);
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+}
