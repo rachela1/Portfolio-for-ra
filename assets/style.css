@@ -134,12 +134,8 @@ p {
 
 }
 .caption {
-    position: absolute;
-    margin:16px;
-    padding:8px;
-    border:4px solid; 
-    color: palevioletred;
-    
+   display: block;
+    color: palevioletred; 
 }
 
 .contact {
