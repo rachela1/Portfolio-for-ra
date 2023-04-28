@@ -119,13 +119,10 @@ p {
     position: relative;
     display: inline-block;
     flex-direction:column;
-    gap:1px;
+    margin-left: 295px;
     flex-wrap: wrap;
     border-color: pink;
-    padding:10px;
-    margin-left: 285px;
     filter:blur(2px)
-    
 }
 
 .work-other:hover{
@@ -142,6 +139,7 @@ p {
     padding:8px;
     border:4px solid; 
     color: palevioletred;
+    
 }
 
 .contact {
@@ -152,4 +150,8 @@ p {
     padding-left: 40px;
 }
 
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }
 
